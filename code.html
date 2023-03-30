@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <style type="text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        #logo-div
+        {
+            width: 100%;
+            min-height: 50px;
+            background-color:lightgrey;
+            padding-left: 2%;
+           line-height: 50px;
+            border-left: 20px solid black;
+            margin-bottom: 1%;
+           
+           
+        }
+        #nav-div
+        {
+            width: 100%;
+            min-height: 30%;
+            background-color:lightgray ;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+            
+        }
+        #header-div
+        {
+            width: 100%;
+            min-height: 100%;
+            background-color: lightgray;
+            line-height: 100px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #main
+        {
+            width: 100%;
+           
+           
+           
+            
+        }
+        #sidebar-div
+        {
+            width: 20%;
+            min-height: 400px;
+            background-color: lightgrey;
+            float: left;
+            text-align: center;
+            line-height: 400px;
+            
+        }
+        #bodyarea-div
+        {
+            width: 75%;
+            background-color: lightgrey;
+            min-height: 400px;
+            text-align: center;
+            line-height: 400px;
+            float: right;
+            
+        }
+        #footer-div
+        {
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgrey;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 10px;
+
+        }
+        #wrapper-div
+        {
+            width: 80%;
+           
+            margin:auto;
+        }
+        .clearfix::after
+        {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper-div">
+   <div id="logo-div">Logo</div>
+   <div id="nav-div">Navigation</div>
+   <div id="header-div">Header/border</div>
+   <div id="main" class="clearfix">
+    <div id="sidebar-div">side bar</div>
+    <div id="bodyarea-div">Body area</div>
+   </div>
+   <div id="footer-div">footer</div>
+</div>
+</body>
+</html>

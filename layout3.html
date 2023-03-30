@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <style type="text/css">
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+       
+            
+       
+        #logo-div
+        {
+            width: 100%;
+            min-height: 50px;
+            float: left;
+            line-height: 50px;
+            padding-left: 2px;
+            background-color: gray;
+            margin-bottom: 10px;
+            
+            
+           
+           
+        }
+        
+        #header-div
+        {
+            width: 100%;
+            min-height: 50%;
+            background-color: rgb(123, 18, 18);
+            line-height: 50px;
+            text-align: center;
+            
+            margin-bottom: 10px;
+        }
+       
+        #main
+        {
+            width: 100%;
+            margin-bottom: 10px;
+           
+
+        }
+        #main .
+        {
+            margin-right: 5%;
+        }
+        #child1
+        {
+            width: 50%;
+            min-height: 400px;
+            background-color: lightgrey;
+            float: left;
+        }
+        #child2
+        {
+            width: 50%;
+            min-height: 400px;
+            background-color: grey;
+            float: right;
+        }
+        
+      
+            
+        
+                   
+        
+        #footer-div
+        {
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgrey;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 10px;
+            
+
+        }
+        #wrapper-div
+        {
+            width: 80%;
+           
+            margin:auto;
+        }
+        .clearfix::after
+        {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        .clear::after
+        {
+            content: " ";
+            display:block;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper-div">
+   <div id="logo-nav-div" class="clear">
+    <div id="logo-div">logo</div>
+    
+    
+       
+</div>
+   
+   
+   
+   <div id="main" class="clearfix">
+       <div id="child1" class=""> 
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        </div>
+        <div id="child2" class="clearfix">
+        <div id="header-div">Header/border</div>
+        <div class="box">box3</div>
+    </div>
+    
+   
+   </div>
+   <div id="footer-div">footer</div>
+   
+
+</div>
+</body>
+</html>
