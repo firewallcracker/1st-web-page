@@ -1,0 +1,740 @@
+<style type="text/css">
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .body {
+    background-image: url(../images/back-img.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  .top-bar {
+    background-color: #0d5916;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .top-bar ul {
+    list-style: none;
+    margin-bottom: -5px;
+  }
+  
+  .top-bar ul li {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  
+  .top-bar ul li p {
+    display: inline-block;
+    margin-left: 5px;
+    /*    font-weight: bold;*/
+  }
+  
+  .right-pad {
+    padding-right: 0px;
+  }
+  .left-pad {
+    padding-left: 0px;
+  }
+  
+  .top {
+    background-color: white;
+  }
+  
+  .banner {
+    padding: 0 80px 0 80px;
+  }
+  
+  .nav-right p {
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .top-right-info img {
+    width: 84px;
+    height: 84px;
+  }
+  
+  .nav-container {
+    margin: 0 60px 0 60px !important;
+  }
+  
+  .navbar {
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  
+  .nav-link {
+    color: white !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    /*    text-align: center;*/
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: white;
+    color: #0d5916 !important;
+    transition: all 0.2s ease-in;
+  }
+  .nav-item {
+    padding: 0 10px 0 10px;
+  }
+  .navbar i {
+    color: white;
+    border: white !important;
+  }
+  
+  .nav-bg {
+    background-color: #0d5916 !important;
+  }
+  
+  .dropdown-menu {
+    background-color: #0d5916;
+    border: none;
+  }
+  
+  .dropdown-item {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-top: solid 1px #efefef;
+    /*    text-align: center;*/
+    width: 100% !important;
+  }
+  
+  .msg {
+    font-size: 14px;
+    color: #20232e;
+    letter-spacing: 0.5px;
+  }
+  
+  .pname {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .mar-pad {
+    padding-top: 20px;
+  }
+  
+  .box {
+    padding: 5px;
+    background-color: #ffffff;
+  }
+  
+  .heading {
+    padding: 5px 0 5px 8px;
+    border-left: 5px solid #0d5916;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+  .heading-center {
+    padding: 2px;
+    border-left: 5px solid #0d5916;
+    border-right: 5px solid #0d5916;
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .sub-heading {
+    padding: 5px 0 5px 8px;
+    border-left: 5px solid #d11414;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #d11414;
+  }
+  .mand-disc thead{
+    font-family: "Montserrat", sans-serif;
+  }
+  .mand-disc a{
+   color: #000000 !important;
+  }
+  
+  /*Notice sidebar*/
+  
+  
+  .notice-board p {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #0d5916;
+  }
+  
+  marquee {
+    max-height: 382px;
+  }
+  
+  .details h6,
+  .list-group a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .details a {
+    color: #0d5916;
+  }
+  
+  .details p,
+  .news-date {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+    color: #d11414;
+  }
+  
+  .facility-main {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .facility img {
+    margin-top: -2px;
+  }
+  
+  .facility-name h6 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d11414;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
+  
+  .facility-name p {
+    margin-top: -10px;
+  }
+  
+  .courses h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 0 5px 0;
+    color: #d11414;
+  }
+  
+  .courses a {
+    color: #d11414;
+  }
+  .courses a:hover {
+    color: #d15514;
+  }
+  
+  .news-container {
+    margin: 5px !important;
+  }
+  
+  .news-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 0 5px 0;
+    color: #0d5916;
+  }
+  
+  
+  .btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  
+  /*
+  
+  
+  .placement{
+  /*
+      background-color: yellow;
+      height: 100px;
+  */
+  
+  .download-bg {
+    background-color: #0d5916;
+    padding: 36px 0 36px;
+  }
+  
+  .download-text {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    line-height: 2.5;
+  }
+  
+  #download-btn .btn,
+  #download-btn .btn-primary {
+    background-color: white;
+    border: white;
+    color: #0d5916;
+  }
+  
+  #download-btn .btn:hover {
+    background-color: #fc3c3c !important;
+    transition: all 0.5s ease-in-out;
+    color: white !important;
+  }
+  
+  .foot-gap {
+    padding: 65px 80px 65px 80px;
+  }
+  
+  footer {
+    background-color: black;
+    padding: 15px 0 15px 0;
+    color: #8f8f90;
+    height: auto;
+    margin-top: auto;
+  }
+  
+  .foot-p {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .foot-p2 {
+    margin-top: -12px;
+    font-size: 14px;
+  }
+  
+  .copy {
+    background-color: #0d5916;
+  }
+  
+  .copyright {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .foot-list {
+    list-style: none;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  
+  .foot-list a {
+    color: #8f8f90;
+  }
+  
+  .foot-list a:hover {
+    color: white;
+  }
+  
+  .foot-title {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 15px;
+    border-left: 5px solid white;
+  }
+  
+  .foot-list li {
+    padding: 2px 0 2px 0;
+  }
+  
+  #foot-icon .fas {
+    position: absolute;
+    margin-top: -1px;
+    left: 10px;
+    border: 1.5px solid #8f8f90;
+    padding: 5px;
+    border-radius: 100px;
+  }
+  
+  .add {
+    margin-left: 14px;
+  }
+  
+  .line {
+    /*    border-right: 1px solid #8F8F90;*/
+  }
+  
+  /*About section*/
+  
+  .mission {
+    list-style: none;
+  }
+  
+  .mission i {
+    color: #d11414;
+    font-size: 20px;
+  }
+  
+  .mission li {
+    padding: 5px 0 5px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
+  
+  /*Contact us page */
+  
+  #frm .btn {
+    background: #0d5916 !important;
+    border: #0d5916 !important;
+  }
+  
+  .prin-img {
+    float: left;
+    /*height: 200px;*/
+    width: 182px;
+    margin-right: 5px;
+  }
+  
+  /*facility page*/
+  
+  .imgfloatleft {
+    float: left;
+    width: 50%;
+    margin-right: 5px;
+  }
+  
+  .imgfloatright {
+    float: right;
+    width: 50%;
+    margin-left: 5px;
+  }
+  
+  /*faculties page*/
+  
+  .faculty {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #0d5916;
+    font-size: 14px;
+  }
+  
+  .fac-pic {
+    width: 70%;
+  }
+  
+  /*Notice Page*/
+  
+  .notice-list {
+    border: solid 1px #dbdbdb;
+    border-radius: 2px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px 0 15px 0;
+  }
+  
+  .notice-list h6 {
+    font-size: 22px;
+    color: #0d5916;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .notice-list #notice-date {
+    font-size: 16px;
+    color: #d11414;
+    font-weight: bold;
+  }
+  
+  .notice-list:hover {
+    /*
+      position: relative;
+      left: 10px;
+  */
+    box-shadow: 5px 5px 10px gray;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /*News and Events Page*/
+  
+  .news {
+    padding: 15px;
+  }
+  .news-container {
+    padding: 5px;
+  }
+  .news:hover {
+    box-shadow: 5px 5px 10px gray;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /*Gallery Page*/
+  
+  .gallery-img {
+    text-align: center;
+  }
+  
+  .gallery-img small {
+    color: #d11414;
+  }
+  
+  /*DOWNLOADS PAGE*/
+  
+  #down-docs {
+    margin-left: 15px;
+  }
+  
+  #down-docs ul {
+    list-style: none;
+  }
+  
+  #down-docs ul li {
+    margin: 8px 0 8px 0;
+  }
+  
+  .sem {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  
+  .sem i {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30%;
+  }
+  
+  #syl_link {
+    color: white;
+  }
+  
+  .btnf {
+    font-size: 12px !important;
+  }
+  /* PLACEMENT PAGE */
+  .place-box{
+    padding: 5px;
+    text-align: center;
+  }
+  .place-box .place-name{
+    text-align: center;
+    font-weight: bold;
+    color: #d11414;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+   .place-branch{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .place-box .place-cmp{
+    margin-top: 20px;
+    line-height: 1;
+    color: #0d5916;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .place-img{
+    height: 153.6px;
+    width: 119.4px;
+    border: 1px solid #0d5916;
+  }
+  /* Responsive Design Code */
+  
+  @media only screen and (max-width: 991px) {
+    .navbar {
+      min-height: 40px;
+    }
+    .nav-item {
+      width: 100% !important;
+    }
+    .nav-item .nav-link {
+      width: 100%;
+      padding-left: 20px !important;
+    }
+    .facility-name h6 {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    .line {
+      border: none;
+    }
+    .nav-container {
+      margin: 0 10px 0 10px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width: 480px) {
+    .banner {
+      padding: 0 0px 0 0px;
+    }
+    .alone {
+      height: 88px;
+      padding: 5px 0 10px;
+    }
+    .gpklogo {
+      width: 400px;
+      margin-top: 8px;
+    }
+  
+    .jharlogo {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .top-right-ul {
+      position: relative;
+      margin-top: -40px;
+    }
+    .right-pad {
+      padding: 0px;
+    }
+    .left-pad {
+      padding: 0px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .jharlogo {
+      top: -50px;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (max-width: 479px) and (min-width: 320px) {
+    .top-bar {
+      height: 50px;
+    }
+  
+    .banner {
+      padding: 0 10px 0 10px;
+    }
+    .top-bar ul {
+      text-align: center;
+    }
+    .top-bar ul li i,
+    .top-bar ul li p {
+      font-size: 10px;
+    }
+    .top-right-ul {
+      margin-top: -18px;
+    }
+    .top-right-ul li {
+      text-align: center;
+      width: 100%;
+    }
+    .top-right-ul li i,
+    .top-right-ul li p {
+      font-size: 10px;
+    }
+    .top-bar ul li p {
+      font-weight: bold;
+    }
+    .alone {
+      height: 80px;
+      padding: 5px 0 10px;
+    }
+    .des {
+      visibility: hidden;
+    }
+    .nav-container {
+      margin: 0 20px 0 20px !important;
+      padding: 6px 0 6px;
+    }
+    .heading {
+      font-size: 18px;
+    }
+    .pr-heading {
+      text-align: center;
+      border-left: none;
+    }
+    .facility-name {
+      margin-bottom: 15px;
+    }
+    .res-img {
+      text-align: center;
+    }
+    .prin-img {
+      float: none;
+      text-align: center;
+      width: 50%;
+    }
+    .facility-name h6 {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .facility-name .msg {
+      margin-top: 5px;
+    }
+  
+    .download-text {
+      font-size: 15px;
+      text-align: center;
+    }
+  
+    .line {
+      border-right: none;
+    }
+    .foot-list,
+    .foot-title {
+      text-align: center;
+    }
+    .foot-title {
+      padding-left: 0px;
+      border-left: none;
+      text-decoration: underline;
+    }
+  
+    .copyright {
+      text-align: center !important;
+    }
+  
+    .sub-heading {
+      margin-top: 15px;
+    }
+  }
+  
